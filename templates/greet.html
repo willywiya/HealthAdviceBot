@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthBot 🤖</title>
+</head>
+<body>
+    <h1>{{ greeting }}! Welcome to HealthBot 🤖</h1>
+    <form method="POST" action="{{ url_for('choose') }}">
+        <label>Would you like to:
+            <input type="radio" name="choice" value="advice" required> Get advice on a symptom
+            <input type="radio" name="choice" value="risk" required> Calculate risk
+        </label>
+        <button type="submit">Proceed</button>
+    </form>
+</body>
+</html>

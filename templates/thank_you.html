@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+</head>
+<body>
+    <h1>Thank you for using HealthBot 🤖</h1>
+    <p>Just a reminder: The advice provided here is just an estimate. Please consult a healthcare professional for a proper diagnosis.</p>
+    <form method="POST" action="{{ url_for('index') }}">
+        <button type="submit">Start Again</button>
+    </form>
+    <form method="POST" action="{{ url_for('thank_you') }}">
+        <button type="submit">Exit</button>
+    </form>
+</body>
+</html>

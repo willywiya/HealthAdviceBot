@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do Something Else?</title>
+</head>
+<body>
+    <h1>Would you like to do something else?</h1>
+    <form action="{{ url_for('ask_again') }}" method="POST">
+        <button type="submit" name="continue_action" value="yes">Yes, help me with another symptom or risk calculation</button>
+        <button type="submit" name="continue_action" value="no">No, I'm done</button>
+    </form>
+</body>
+</html>

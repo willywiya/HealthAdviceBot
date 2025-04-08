@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Level</title>
+</head>
+<body>
+    <h1>{{ risk_level }}</h1>
+    <p>Based on your responses, this is your risk level. If you need further assistance, feel free to check again.</p>
+    <form method="POST" action="{{ url_for('thank_you') }}">
+        <button type="submit">Do something else</button>
+    </form>
+</body>
+</html>

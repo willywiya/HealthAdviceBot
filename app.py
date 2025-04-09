@@ -80,7 +80,7 @@ def risk_calculator(answers):
 @app.route("/", methods=["GET", "POST"])
 def index():
     greeting = greet()
-    return render_template("greet.html", greeting=greeting)
+    return render_template("index.html", greeting=greeting)
 
 # Route for the next page, where they choose between symptom advice or risk calculation
 @app.route("/choose", methods=["GET", "POST"])
